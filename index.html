@@ -7,526 +7,553 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2575.7">
   <style type="text/css">
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000; min-height: 16.0px}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000; min-height: 16.0px}
     span.s1 {font-kerning: none}
-    span.s2 {font: 14.0px Times; font-kerning: none}
-    span.s3 {font: 15.2px Courier; font-kerning: none}
+    span.s2 {font: 12.0px Times; font-kerning: none}
+    span.s3 {font: 13.0px Courier; font-kerning: none}
   </style>
 </head>
 <body>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Company Valuation Calculator - Deployment Guide</b></span></h1>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Step 1: Create the Project Files</b></span></h2>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>1. Create a new folder on your computer:</b></span></h3>
-<p class="p4"><span class="s1">company-valuation-calculator/</span></p>
-<p class="p4"><span class="s1">├── index.html</span></p>
-<p class="p4"><span class="s1">├── package.json</span></p>
-<p class="p4"><span class="s1">└── README.md</span></p>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 15.2px Courier; -webkit-text-stroke: #000000"><span class="s2"><b>2. Create </b></span><span class="s1"><b>package.json</b></span><span class="s2"><b>:</b></span></h3>
-<p class="p4"><span class="s1">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">  </span>"name": "company-valuation-calculator",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">  </span>"version": "1.0.0",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">  </span>"description": "A comprehensive company valuation calculator with industry benchmarks",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">  </span>"scripts": {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>"dev": "vite",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>"build": "vite build",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>"preview": "vite preview"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">  </span>"dependencies": {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>"react": "^18.2.0",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>"react-dom": "^18.2.0"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">  </span>"devDependencies": {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>"@types/react": "^18.2.0",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>"@types/react-dom": "^18.2.0",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>"@vitejs/plugin-react": "^4.0.0",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>"autoprefixer": "^10.4.14",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>"postcss": "^8.4.24",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>"tailwindcss": "^3.3.0",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>"vite": "^4.4.0"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p4"><span class="s1">}</span></p>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>3. Create </b></span><span class="s3"><b>index.html</b></span><span class="s1"><b>:</b></span></h3>
-<p class="p4"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p4"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p4"><span class="s1">&lt;head&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Company Valuation Calculator&lt;/title&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/react@18/umd/react.production.min.js"&gt;&lt;/script&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"&gt;&lt;/script&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/@babel/standalone/babel.min.js"&gt;&lt;/script&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>/* Custom styles for better compatibility */</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>input[type="range"] {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>-webkit-appearance: none;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>appearance: none;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>height: 6px;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>background: #ddd;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 3px;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>outline: none;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>input[type="range"]::-webkit-slider-thumb {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>-webkit-appearance: none;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>appearance: none;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>width: 20px;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>height: 20px;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>background: #3b82f6;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 50%;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>input[type="range"]::-moz-range-thumb {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>width: 20px;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>height: 20px;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>background: #3b82f6;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 50%;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>border: none;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
-<p class="p4"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p4"><span class="s1">&lt;body&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="root"&gt;&lt;/div&gt;</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script type="text/babel"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const { useState, useEffect } = React;</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>// Lucide React icons as simple SVGs</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const Calculator = ({ size = 24, className = "" }) =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;rect width="16" height="20" x="4" y="2" rx="2"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;line x1="8" x2="16" y1="6" y2="6"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;line x1="16" x2="16" y1="14" y2="18"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="m16 10-4 4-4-4"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const TrendingUp = ({ size = 24, className = "" }) =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;polyline points="22,7 13.5,15.5 8.5,10.5 2,17"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;polyline points="16,7 22,7 22,13"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const Users = ({ size = 24, className = "" }) =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;circle cx="9" cy="7" r="4"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="m22 21-3.5-3.5M17 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const AlertTriangle = ({ size = 24, className = "" }) =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="M12 9v4"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="m12 17 .01 0"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const Settings = ({ size = 24, className = "" }) =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;circle cx="12" cy="12" r="3"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const CompanyValuationCalculator = () =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [financials, setFinancials] = useState({</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>revenue: 10000000,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>ebitda: 2000000,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>industry: 'SaaS'</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>});</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [customMultiples, setCustomMultiples] = useState({</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>enabled: false,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>revenueMultiple: 0,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>ebitdaMultiple: 0</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>});</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [equityHolders, setEquityHolders] = useState([</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: 'Founder 1', shares: 5000000, strikePrice: 0.01 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: 'Founder 2', shares: 3000000, strikePrice: 0.01 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: 'Employee Pool', shares: 2000000, strikePrice: 0.50 }</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>]);</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [totalShares, setTotalShares] = useState(10000000);</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>// Industry benchmark data (static as of 2024)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const industryBenchmarks = {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>'SaaS': {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 4, average: 8, optimistic: 15 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 15, average: 25, optimistic: 40 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>description: 'Software as a Service'</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>'E-commerce': {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 1.5, average: 3, optimistic: 6 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 8, average: 15, optimistic: 25 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>description: 'E-commerce &amp; Marketplace'</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>'FinTech': {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 3, average: 6, optimistic: 12 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 12, average: 20, optimistic: 35 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>description: 'Financial Technology'</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>'HealthTech': {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 3, average: 7, optimistic: 14 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 10, average: 18, optimistic: 30 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>description: 'Healthcare Technology'</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>'IT Services': {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 1, average: 2.5, optimistic: 5 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 8, average: 12, optimistic: 20 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>description: 'IT Services &amp; Consulting'</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>'Management Consulting': {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 1.5, average: 3, optimistic: 6 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 6, average: 10, optimistic: 16 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>description: 'Management &amp; Strategy Consulting'</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>'EdTech': {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 2, average: 5, optimistic: 10 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 8, average: 15, optimistic: 25 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>description: 'Educational Technology'</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>'Retail': {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 0.5, average: 1.2, optimistic: 2.5 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 6, average: 10, optimistic: 16 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>description: 'Traditional Retail'</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>'Manufacturing': {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 0.8, average: 1.5, optimistic: 3 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 5, average: 8, optimistic: 14 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>description: 'Manufacturing &amp; Industrial'</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const calculateValuation = (scenario) =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const benchmark = industryBenchmarks[financials.industry];</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>let revenueMultiple, ebitdaMultiple;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (customMultiples.enabled) {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple = customMultiples.revenueMultiple;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple = customMultiples.ebitdaMultiple;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple = benchmark.revenueMultiple[scenario];</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple = benchmark.ebitdaMultiple[scenario];</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const revenueValuation = financials.revenue * revenueMultiple;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const ebitdaValuation = financials.ebitda * ebitdaMultiple;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>revenue: revenueValuation,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>ebitda: ebitdaValuation,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>average: (revenueValuation + ebitdaValuation) / 2,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const addEquityHolder = () =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>setEquityHolders([...equityHolders, {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>name: `Holder ${equityHolders.length + 1}`,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>shares: 100000,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>strikePrice: 1.00</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}]);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const updateEquityHolder = (index, field, value) =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const updated = [...equityHolders];</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>updated[index][field] = field === 'name' ? value : parseFloat(value) || 0;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>setEquityHolders(updated);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const removeEquityHolder = (index) =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>setEquityHolders(equityHolders.filter((_, i) =&gt; i !== index));</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const formatCurrency = (value) =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return new Intl.NumberFormat('en-US', {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>style: 'currency',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>currency: 'USD',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>minimumFractionDigits: 0,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>maximumFractionDigits: 0,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}).format(value);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const formatNumber = (value) =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return new Intl.NumberFormat('en-US').format(value);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const scenarios = ['conservative', 'average', 'optimistic'];</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const valuations = scenarios.reduce((acc, scenario) =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>acc[scenario] = calculateValuation(scenario);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return acc;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>}, {});</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>return React.createElement('div', { className: "max-w-6xl mx-auto p-6 bg-gray-50 min-h-screen" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>React.createElement('div', { key: 'main', className: "bg-white rounded-lg shadow-lg p-6 mb-6" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>React.createElement('div', { key: 'header', className: "flex items-center gap-3 mb-6" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>React.createElement(Calculator, { key: 'icon', className: "text-blue-600", size: 32 }),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>React.createElement('h1', { key: 'title', className: "text-3xl font-bold text-gray-800" }, 'Company Valuation Calculator')</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>]),</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">              </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>// Disclaimer</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>React.createElement('div', { key: 'disclaimer', className: "bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6" },<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>React.createElement('div', { className: "flex items-start" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement(AlertTriangle, { key: 'warning', className: "text-yellow-600 mt-1 mr-3", size: 20 }),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('div', { key: 'content' }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>React.createElement('h3', { key: 'warn-title', className: "font-semibold text-yellow-800" }, 'Important Disclaimers'),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>React.createElement('p', { key: 'warn-text', className: "text-yellow-700 text-sm mt-1" },<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>'This calculator uses static industry benchmarks and should not be used as the sole basis for investment decisions. Actual valuations depend on numerous factors including growth rates, market conditions, competitive position, and company-specific metrics. Always consult with financial professionals for accurate valuations.')</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>])</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>])</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>),</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>// Financial Inputs</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>React.createElement('div', { key: 'inputs', className: "grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>React.createElement('div', { key: 'revenue' }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('label', { className: "block text-sm font-medium text-gray-700 mb-2" }, 'Annual Revenue'),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('input', {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>type: "range",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>min: "100000",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>max: "100000000",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>step: "100000",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>value: financials.revenue,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>onChange: (e) =&gt; setFinancials({...financials, revenue: parseInt(e.target.value)}),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>className: "w-full mb-2"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>}),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('div', { className: "text-center font-semibold text-lg text-blue-600" },<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>formatCurrency(financials.revenue))</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>]),</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>React.createElement('div', { key: 'ebitda' }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('label', { className: "block text-sm font-medium text-gray-700 mb-2" }, 'Annual EBITDA'),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('input', {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>type: "range",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>min: "-5000000",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>max: "20000000",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>step: "100000",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>value: financials.ebitda,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>onChange: (e) =&gt; setFinancials({...financials, ebitda: parseInt(e.target.value)}),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>className: "w-full mb-2"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>}),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('div', { className: "text-center font-semibold text-lg text-green-600" },<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>formatCurrency(financials.ebitda))</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>]),</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>React.createElement('div', { key: 'industry' }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('label', { className: "block text-sm font-medium text-gray-700 mb-2" }, 'Industry Sector'),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('select', {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>value: financials.industry,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>onChange: (e) =&gt; setFinancials({...financials, industry: e.target.value}),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>className: "w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>}, Object.entries(industryBenchmarks).map(([key, value]) =&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>React.createElement('option', { key, value: key }, value.description)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>))</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>])</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>]),</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>// Custom Multiples</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>React.createElement('div', { key: 'custom', className: "bg-gray-50 rounded-lg p-4 mb-8" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>React.createElement('div', { key: 'custom-header', className: "flex items-center gap-2 mb-4" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement(Settings, { key: 'settings', className: "text-gray-600", size: 20 }),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('h3', { key: 'custom-title', className: "text-lg font-semibold text-gray-800" }, 'Custom Valuation Multiples')</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>]),</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>React.createElement('div', { key: 'custom-toggle', className: "flex items-center gap-4 mb-4" },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('label', { className: "flex items-center" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>React.createElement('input', {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>key: 'checkbox',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>type: "checkbox",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>checked: customMultiples.enabled,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>onChange: (e) =&gt; setCustomMultiples({...customMultiples, enabled: e.target.checked}),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>className: "mr-2"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>}),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>'Use custom multiples instead of industry benchmarks'</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>])</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>),</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>customMultiples.enabled &amp;&amp; React.createElement('div', { key: 'custom-inputs', className: "grid md:grid-cols-2 gap-4" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('div', { key: 'rev-mult' }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>React.createElement('label', { className: "block text-sm font-medium text-gray-700 mb-2" }, 'Revenue Multiple'),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>React.createElement('input', {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>type: "number",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>step: "0.1",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>value: customMultiples.revenueMultiple,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>onChange: (e) =&gt; setCustomMultiples({...customMultiples, revenueMultiple: parseFloat(e.target.value) || 0}),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>className: "w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>placeholder: "e.g., 5.5"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>})</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>]),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('div', { key: 'ebit-mult' }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>React.createElement('label', { className: "block text-sm font-medium text-gray-700 mb-2" }, 'EBITDA Multiple'),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>React.createElement('input', {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>type: "number",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>step: "0.1",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>value: customMultiples.ebitdaMultiple,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>onChange: (e) =&gt; setCustomMultiples({...customMultiples, ebitdaMultiple: parseFloat(e.target.value) || 0}),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>className: "w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>placeholder: "e.g., 15.0"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>})</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>])</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>])</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>]),</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>// Valuation Results</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>React.createElement('div', { key: 'results', className: "mb-8" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>React.createElement('div', { key: 'results-header', className: "flex items-center gap-2 mb-4" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement(TrendingUp, { key: 'trend', className: "text-green-600", size: 24 }),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('h2', { key: 'results-title', className: "text-2xl font-bold text-gray-800" }, 'Valuation Scenarios')</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>]),</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>React.createElement('div', { key: 'scenarios', className: "grid md:grid-cols-3 gap-4" },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>scenarios.map((scenario) =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>const colorClass = scenario === 'conservative' ? 'border-red-200 bg-red-50' :</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                     </span>scenario === 'average' ? 'border-blue-200 bg-blue-50' :</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                     </span>'border-green-200 bg-green-50';</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>const textColor = scenario === 'conservative' ? 'text-red-700' :</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                     </span>scenario === 'average' ? 'text-blue-700' :</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                     </span>'text-green-700';</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>const valueColor = scenario === 'conservative' ? 'text-red-600' :</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                      </span>scenario === 'average' ? 'text-blue-600' :</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                      </span>'text-green-600';</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>return React.createElement('div', {<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>key: scenario,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>className: `p-4 rounded-lg border-2 ${colorClass}`<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>}, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>React.createElement('h3', {<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>key: 'scenario-title',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>className: `text-lg font-semibold mb-3 capitalize ${textColor}`<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>}, `${scenario} Case`),</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>React.createElement('div', { key: 'scenario-details', className: "space-y-2 text-sm" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>React.createElement('div', { key: 'rev-mult', className: "flex justify-between" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('span', { key: 'label' }, 'Revenue Multiple:'),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('span', { key: 'value', className: "font-medium" }, `${valuations[scenario].revenueMultiple}x`)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>]),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>React.createElement('div', { key: 'ebit-mult', className: "flex justify-between" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('span', { key: 'label' }, 'EBITDA Multiple:'),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('span', { key: 'value', className: "font-medium" }, `${valuations[scenario].ebitdaMultiple}x`)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>]),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>React.createElement('hr', { key: 'hr1', className: "my-2" }),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>React.createElement('div', { key: 'rev-val', className: "flex justify-between" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('span', { key: 'label' }, 'Revenue-based:'),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('span', { key: 'value', className: "font-medium" }, formatCurrency(valuations[scenario].revenue))</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>]),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>React.createElement('div', { key: 'ebit-val', className: "flex justify-between" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('span', { key: 'label' }, 'EBITDA-based:'),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('span', { key: 'value', className: "font-medium" }, formatCurrency(valuations[scenario].ebitda))</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>]),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>React.createElement('hr', { key: 'hr2', className: "my-2" }),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>React.createElement('div', { key: 'avg-val', className: "flex justify-between text-base font-bold" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('span', { key: 'label' }, 'Average Valuation:'),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('span', {<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>key: 'value',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>className: valueColor<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>}, formatCurrency(valuations[scenario].average))</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>])</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>])</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>]);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>})</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>]),</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>// Equity Distribution</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>React.createElement('div', { key: 'equity' }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>React.createElement('div', { key: 'equity-header', className: "flex items-center justify-between mb-4" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('div', { key: 'equity-title', className: "flex items-center gap-2" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>React.createElement(Users, { key: 'users', className: "text-purple-600", size: 24 }),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>React.createElement('h2', { key: 'title', className: "text-2xl font-bold text-gray-800" }, 'Equity Distribution')</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>]),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('button', {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>key: 'add-btn',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>onClick: addEquityHolder,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>className: "px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>}, 'Add Holder')</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>]),</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>React.createElement('div', { key: 'total-shares', className: "mb-4" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('label', { className: "block text-sm font-medium text-gray-700 mb-2" }, 'Total Outstanding Shares'),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('input', {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>type: "number",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>value: totalShares,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>onChange: (e) =&gt; setTotalShares(parseInt(e.target.value) || 0),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>className: "w-full max-w-xs p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>})</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>]),</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>React.createElement('div', { key: 'equity-table', className: "overflow-x-auto" },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>React.createElement('table', { className: "w-full border-collapse border border-gray-300" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>React.createElement('thead', { key: 'thead' },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>React.createElement('tr', { className: "bg-gray-100" }, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>'Holder Name', 'Shares/Options', 'Strike Price', 'Ownership %',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>'Conservative Value', 'Average Value', 'Optimistic Value', 'Actions'</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>].map((header, i) =&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>React.createElement('th', {<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>key: i,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>className: "border border-gray-300 px-4 py-2 text-left"<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>}, header)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>))</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>React.createElement('tbody', { key: 'tbody' },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>equityHolders.map((holder, index) =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>const ownership = (holder.shares / totalShares) * 100;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>const sharePrice = {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>conservative: valuations.conservative.average / totalShares,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>average: valuations.average.average / totalShares,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>optimistic: valuations.optimistic.average / totalShares</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>};</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>const equityValue = {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>conservative: Math.max(0, (sharePrice.conservative - holder.strikePrice) * holder.shares),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>average: Math.max(0, (sharePrice.average - holder.strikePrice) * holder.shares),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>optimistic: Math.max(0, (sharePrice.optimistic - holder.strikePrice) * holder.shares)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>};</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>return React.createElement('tr', {<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>key: index,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>className: "hover:bg-gray-50"<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>}, [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('td', { key: 'name', className: "border border-gray-300 px-4 py-2" },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>React.createElement('input', {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>type: "text",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>value: holder.name,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>onChange: (e) =&gt; updateEquityHolder(index, 'name', e.target.value),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>className: "w-full p-1 border-0 bg-transparent focus:bg-white focus:border focus:border-gray-300 rounded"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>})</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('td', { key: 'shares', className: "border border-gray-300 px-4 py-2" },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>React.createElement('input', {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>type: "number",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>value: holder.shares,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>onChange: (e) =&gt; updateEquityHolder(index, 'shares', e.target.value),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>className: "w-full p-1 border-0 bg-transparent focus:bg-white focus:border focus:border-gray-300 rounded"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>})</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('td', { key: 'strike', className: "border border-gray-300 px-4 py-2" },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>React.createElement('input', {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>type: "number",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>step: "0.01",</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>value: holder.strikePrice,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>onChange: (e) =&gt; updateEquityHolder(index, 'strikePrice', e.target.value),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>className: "w-full p-1 border-0 bg-transparent focus:bg-white focus:border focus:border-gray-300 rounded"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>})</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('td', {<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>key: 'ownership',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>className: "border border-gray-300 px-4 py-2 text-center"<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>}, `${ownership.toFixed(2)}%`),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('td', {<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>key: 'cons-val',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>className: "border border-gray-300 px-4 py-2 text-right text-red-600 font-medium"<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>}, formatCurrency(equityValue.conservative)),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('td', {<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>key: 'avg-val',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>className: "border border-gray-300 px-4 py-2 text-right text-blue-600 font-medium"<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>}, formatCurrency(equityValue.average)),</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>React.createElement('td', {<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>key: 'opt-val',</span></p>
+<p class="p1"><span class="s1">{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>"name": "company-valuation-calculator",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>"version": "1.0.0",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>"scripts": {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>"dev": "serve .",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>"build": "echo 'No build needed'",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>"start": "serve ."</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>"devDependencies": {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>"serve": "^14.0.0"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s2"><b>File: </b></span><span class="s1"><b>vercel.json</b><b></b></span></p>
+<p class="p1"><span class="s1">{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>"functions": {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>"pages/api/*.js": {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"runtime": "nodejs18.x"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>"rewrites": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{ "source": "/", "destination": "/index.html" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>]</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p3"><span class="s1"><b>File: </b></span><span class="s3"><b>index.html</b></span><span class="s1"> (Updated version)</span></p>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Company Valuation Calculator&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/@babel/standalone/babel.min.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>input[type="range"] {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>-webkit-appearance: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>appearance: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 6px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #ddd;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 3px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>outline: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>input[type="range"]::-webkit-slider-thumb {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>-webkit-appearance: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>appearance: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #3b82f6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>input[type="range"]::-moz-range-thumb {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #3b82f6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="root"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script type="text/babel"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const { useState } = React;</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Simple SVG icons</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const Calculator = ({ size = 24, className = "" }) =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;rect width="16" height="20" x="4" y="2" rx="2"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;line x1="8" x2="16" y1="6" y2="6"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;line x1="16" x2="16" y1="14" y2="18"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="m16 10-4 4-4-4"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const TrendingUp = ({ size = 24, className = "" }) =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;polyline points="22,7 13.5,15.5 8.5,10.5 2,17"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;polyline points="16,7 22,7 22,13"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const Users = ({ size = 24, className = "" }) =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;circle cx="9" cy="7" r="4"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="m22 21-3.5-3.5M17 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const AlertTriangle = ({ size = 24, className = "" }) =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="M12 9v4"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="m12 17 .01 0"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const Settings = ({ size = 24, className = "" }) =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;circle cx="12" cy="12" r="3"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const CompanyValuationCalculator = () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const [financials, setFinancials] = useState({</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>revenue: 10000000,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>ebitda: 2000000,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>industry: 'SaaS'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>});</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const [customMultiples, setCustomMultiples] = useState({</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>enabled: false,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>revenueMultiple: 0,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>ebitdaMultiple: 0</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>});</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const [equityHolders, setEquityHolders] = useState([</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: 'Founder 1', shares: 5000000, strikePrice: 0.01 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: 'Founder 2', shares: 3000000, strikePrice: 0.01 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: 'Employee Pool', shares: 2000000, strikePrice: 0.50 }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>]);</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const [totalShares, setTotalShares] = useState(10000000);</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const industryBenchmarks = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>'SaaS': {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 4, average: 8, optimistic: 15 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 15, average: 25, optimistic: 40 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>description: 'Software as a Service'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>'E-commerce': {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 1.5, average: 3, optimistic: 6 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 8, average: 15, optimistic: 25 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>description: 'E-commerce &amp; Marketplace'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>'FinTech': {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 3, average: 6, optimistic: 12 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 12, average: 20, optimistic: 35 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>description: 'Financial Technology'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>'HealthTech': {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 3, average: 7, optimistic: 14 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 10, average: 18, optimistic: 30 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>description: 'Healthcare Technology'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>'IT Services': {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 1, average: 2.5, optimistic: 5 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 8, average: 12, optimistic: 20 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>description: 'IT Services &amp; Consulting'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>'Management Consulting': {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 1.5, average: 3, optimistic: 6 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 6, average: 10, optimistic: 16 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>description: 'Management &amp; Strategy Consulting'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>'EdTech': {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 2, average: 5, optimistic: 10 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 8, average: 15, optimistic: 25 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>description: 'Educational Technology'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>'Retail': {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 0.5, average: 1.2, optimistic: 2.5 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 6, average: 10, optimistic: 16 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>description: 'Traditional Retail'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>'Manufacturing': {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple: { conservative: 0.8, average: 1.5, optimistic: 3 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple: { conservative: 5, average: 8, optimistic: 14 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>description: 'Manufacturing &amp; Industrial'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const calculateValuation = (scenario) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const benchmark = industryBenchmarks[financials.industry];</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>let revenueMultiple, ebitdaMultiple;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (customMultiples.enabled) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple = customMultiples.revenueMultiple;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple = customMultiples.ebitdaMultiple;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple = benchmark.revenueMultiple[scenario];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple = benchmark.ebitdaMultiple[scenario];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const revenueValuation = financials.revenue * revenueMultiple;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const ebitdaValuation = financials.ebitda * ebitdaMultiple;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>revenue: revenueValuation,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>ebitda: ebitdaValuation,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>average: (revenueValuation + ebitdaValuation) / 2,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>revenueMultiple,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>ebitdaMultiple</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const addEquityHolder = () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setEquityHolders([...equityHolders, {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>name: `Holder ${equityHolders.length + 1}`,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>shares: 100000,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>strikePrice: 1.00</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}]);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const updateEquityHolder = (index, field, value) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const updated = [...equityHolders];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updated[index][field] = field === 'name' ? value : parseFloat(value) || 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setEquityHolders(updated);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const removeEquityHolder = (index) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setEquityHolders(equityHolders.filter((_, i) =&gt; i !== index));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const formatCurrency = (value) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return new Intl.NumberFormat('en-US', {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>style: 'currency',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>currency: 'USD',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>minimumFractionDigits: 0,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>maximumFractionDigits: 0,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}).format(value);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const scenarios = ['conservative', 'average', 'optimistic'];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const valuations = scenarios.reduce((acc, scenario) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>acc[scenario] = calculateValuation(scenario);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return acc;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>}, {});</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>return (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="max-w-6xl mx-auto p-6 bg-gray-50 min-h-screen"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className="bg-white rounded-lg shadow-lg p-6 mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="flex items-center gap-3 mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;Calculator className="text-blue-600" size={32} /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;h1 className="text-3xl font-bold text-gray-800"&gt;Company Valuation Calculator&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{/* Disclaimer */}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;AlertTriangle className="text-yellow-600 mt-1 mr-3" size={20} /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;h3 className="font-semibold text-yellow-800"&gt;Important Disclaimers&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;p className="text-yellow-700 text-sm mt-1"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>This calculator uses static industry benchmarks and should not be used as the sole basis for investment decisions.<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>Actual valuations depend on numerous factors including growth rates, market conditions, competitive position,<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>and company-specific metrics. Always consult with financial professionals for accurate valuations.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{/* Financial Inputs */}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label className="block text-sm font-medium text-gray-700 mb-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>Annual Revenue</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;input</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>type="range"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>min="100000"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>max="100000000"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>step="100000"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>value={financials.revenue}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>onChange={(e) =&gt; setFinancials({...financials, revenue: parseInt(e.target.value)})}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>className="w-full mb-2"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="text-center font-semibold text-lg text-blue-600"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>{formatCurrency(financials.revenue)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label className="block text-sm font-medium text-gray-700 mb-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>Annual EBITDA</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;input</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>type="range"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>min="-5000000"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>max="20000000"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>step="100000"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>value={financials.ebitda}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>onChange={(e) =&gt; setFinancials({...financials, ebitda: parseInt(e.target.value)})}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>className="w-full mb-2"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="text-center font-semibold text-lg text-green-600"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>{formatCurrency(financials.ebitda)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label className="block text-sm font-medium text-gray-700 mb-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>Industry Sector</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;select</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>value={financials.industry}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>onChange={(e) =&gt; setFinancials({...financials, industry: e.target.value})}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>{Object.entries(industryBenchmarks).map(([key, value]) =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;option key={key} value={key}&gt;{value.description}&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>))}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{/* Custom Multiples */}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="bg-gray-50 rounded-lg p-4 mb-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="flex items-center gap-2 mb-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;Settings className="text-gray-600" size={20} /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 className="text-lg font-semibold text-gray-800"&gt;Custom Valuation Multiples&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="flex items-center gap-4 mb-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label className="flex items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;input</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>type="checkbox"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>checked={customMultiples.enabled}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>onChange={(e) =&gt; setCustomMultiples({...customMultiples, enabled: e.target.checked})}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>className="mr-2"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>Use custom multiples instead of industry benchmarks</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>{customMultiples.enabled &amp;&amp; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="grid md:grid-cols-2 gap-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;label className="block text-sm font-medium text-gray-700 mb-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>Revenue Multiple</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;input</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>type="number"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>step="0.1"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>value={customMultiples.revenueMultiple}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>onChange={(e) =&gt; setCustomMultiples({...customMultiples, revenueMultiple: parseFloat(e.target.value) || 0})}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>placeholder="e.g., 5.5"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;label className="block text-sm font-medium text-gray-700 mb-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>EBITDA Multiple</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;input</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>type="number"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>step="0.1"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>value={customMultiples.ebitdaMultiple}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>onChange={(e) =&gt; setCustomMultiples({...customMultiples, ebitdaMultiple: parseFloat(e.target.value) || 0})}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>placeholder="e.g., 15.0"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{/* Valuation Results */}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="mb-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="flex items-center gap-2 mb-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;TrendingUp className="text-green-600" size={24} /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h2 className="text-2xl font-bold text-gray-800"&gt;Valuation Scenarios&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="grid md:grid-cols-3 gap-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{scenarios.map((scenario) =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;div key={scenario} className={`p-4 rounded-lg border-2 ${</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>scenario === 'conservative' ? 'border-red-200 bg-red-50' :</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>scenario === 'average' ? 'border-blue-200 bg-blue-50' :</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>'border-green-200 bg-green-50'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>}`}&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 className={`text-lg font-semibold mb-3 capitalize ${</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>scenario === 'conservative' ? 'text-red-700' :</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>scenario === 'average' ? 'text-blue-700' :</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>'text-green-700'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>}`}&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>{scenario} Case</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="space-y-2 text-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;div className="flex justify-between"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;Revenue Multiple:&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span className="font-medium"&gt;{valuations[scenario].revenueMultiple}x&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;div className="flex justify-between"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;EBITDA Multiple:&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span className="font-medium"&gt;{valuations[scenario].ebitdaMultiple}x&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;hr className="my-2" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;div className="flex justify-between"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;Revenue-based:&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span className="font-medium"&gt;{formatCurrency(valuations[scenario].revenue)}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;div className="flex justify-between"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;EBITDA-based:&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span className="font-medium"&gt;{formatCurrency(valuations[scenario].ebitda)}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;hr className="my-2" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;div className="flex justify-between text-base font-bold"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;Average Valuation:&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span className={</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>scenario === 'conservative' ? 'text-red-600' :</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>scenario === 'average' ? 'text-blue-600' :</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>'text-green-600'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>}&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>{formatCurrency(valuations[scenario].average)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>))}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{/* Equity Distribution */}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="flex items-center justify-between mb-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="flex items-center gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;Users className="text-purple-600" size={24} /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;h2 className="text-2xl font-bold text-gray-800"&gt;Equity Distribution&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;button</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>onClick={addEquityHolder}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>Add Holder</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="mb-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label className="block text-sm font-medium text-gray-700 mb-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>Total Outstanding Shares</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;input</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>type="number"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>value={totalShares}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>onChange={(e) =&gt; setTotalShares(parseInt(e.target.value) || 0)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>className="w-full max-w-xs p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="overflow-x-auto"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;table className="w-full border-collapse border border-gray-300"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;thead&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;tr className="bg-gray-100"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;th className="border border-gray-300 px-4 py-2 text-left"&gt;Holder Name&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;th className="border border-gray-300 px-4 py-2 text-left"&gt;Shares/Options&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;th className="border border-gray-300 px-4 py-2 text-left"&gt;Strike Price&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;th className="border border-gray-300 px-4 py-2 text-left"&gt;Ownership %&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;th className="border border-gray-300 px-4 py-2 text-left"&gt;Conservative Value&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;th className="border border-gray-300 px-4 py-2 text-left"&gt;Average Value&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;th className="border border-gray-300 px-4 py-2 text-left"&gt;Optimistic Value&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;th className="border border-gray-300 px-4 py-2 text-left"&gt;Actions&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;/thead&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;tbody&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>{equityHolders.map((holder, index) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>const ownership = (holder.shares / totalShares) * 100;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>const sharePrice = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>conservative: valuations.conservative.average / totalShares,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>average: valuations.average.average / totalShares,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>optimistic: valuations.optimistic.average / totalShares</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>};</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>const equityValue = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>conservative: Math.max(0, (sharePrice.conservative - holder.strikePrice) * holder.shares),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>average: Math.max(0, (sharePrice.average - holder.strikePrice) * holder.shares),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>optimistic: Math.max(0, (sharePrice.optimistic - holder.strikePrice) * holder.shares)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>};</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>return (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;tr key={index} className="hover:bg-gray-50"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;td className="border border-gray-300 px-4 py-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;input</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>type="text"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>value={holder.name}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>onChange={(e) =&gt; updateEquityHolder(index, 'name', e.target.value)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>className="w-full p-1 border-0 bg-transparent focus:bg-white focus:border focus:border-gray-300 rounded"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;td className="border border-gray-300 px-4 py-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;input</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>type="number"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>value={holder.shares}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>onChange={(e) =&gt; updateEquityHolder(index, 'shares', e.target.value)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>className="w-full p-1 border-0 bg-transparent focus:bg-white focus:border focus:border-gray-300 rounded"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;td className="border border-gray-300 px-4 py-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;input</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>type="number"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>step="0.01"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>value={holder.strikePrice}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>onChange={(e) =&gt; updateEquityHolder(index, 'strikePrice', e.target.value)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>className="w-full p-1 border-0 bg-transparent focus:bg-white focus:border focus:border-gray-300 rounded"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;td className="border border-gray-300 px-4 py-2 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>{ownership.toFixed(2)}%</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;td className="border border-gray-300 px-4 py-2 text-right text-red-600 font-medium"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>{formatCurrency(equityValue.conservative)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;td className="border border-gray-300 px-4 py-2 text-right text-blue-600 font-medium"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>{formatCurrency(equityValue.average)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;td className="border border-gray-300 px-4 py-2 text-right text-green-600 font-medium"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>{formatCurrency(equityValue.optimistic)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;td className="border border-gray-300 px-4 py-2 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;button</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>onClick={() =&gt; removeEquityHolder(index)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>className="text-red-600 hover:text-red-800 text-sm"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                  </span>Remove</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>})}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;/tbody&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/table&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ReactDOM.render(&lt;CompanyValuationCalculator /&gt;, document.getElementById('root'));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
 </body>
 </html>
